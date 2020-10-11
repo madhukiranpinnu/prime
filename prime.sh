@@ -42,3 +42,4 @@ done
 echo ${alternateprime[@]}
 reversenumber
 }
+
