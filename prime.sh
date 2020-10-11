@@ -30,3 +30,15 @@ echo "array of prime numbers are:" ${array[@]}
 
 }
 
+alternateprimenumbers ( ) {
+counter=0
+echo "alternate prime numbers are:"
+
+for (( i=0; i<$((${#array[@]}+1)); i+=2 ))
+do
+        alternateprime[counter]=${array[$i]}
+	counter=$(($counter+1))
+done
+echo ${alternateprime[@]}
+reversenumber
+}
